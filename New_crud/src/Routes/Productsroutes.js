@@ -1,10 +1,10 @@
 import express from 'express'
-
+import rolecheck from '../middleware/rolecheck.js';
 import {postfun , getfun , getone, updatefun , deletefun} from '../Controller/productscontroller.js'
 
 let Productrouter = express.Router()
 
-Productrouter.post("/",postfun);
+Productrouter.post("/",rolecheck,postfun);
 
 Productrouter.get("/",getfun)
 
