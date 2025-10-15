@@ -9,12 +9,14 @@ const app = express()
 app.use(express.json())
 
 connectdb()
+
 app.use("/",userrouter)
+
+
+
 const port =process.env.PORT
 app.listen(port,()=>{
     console.log(`server is running on http://localhost:${port}`);
-
-    
 })
 
 

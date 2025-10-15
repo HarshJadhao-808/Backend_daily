@@ -5,6 +5,8 @@ import { createuser } from '../controller/usercontrollers.js'
 
 const userrouter = express.Router()
 
-userrouter.post("/",createuser)
+userrouter.post("/signup",createuser)
+
+
 
 export default userrouter
