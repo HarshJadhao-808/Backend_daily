@@ -2,6 +2,7 @@ import express, { json } from 'express'
 import dotenv from 'dotenv'
 import connectdb from './config/db.js'
 import userrouter from './routes/userroutes.js'
+import bookrouter from './routes/bookroutes.js'
 
 
 dotenv.config()
@@ -12,7 +13,7 @@ connectdb()
 
 app.use("/",userrouter)
 
-
+app.use("/books",bookrouter)
 
 const port =process.env.PORT
 app.listen(port,()=>{
