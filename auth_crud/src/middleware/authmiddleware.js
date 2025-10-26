@@ -3,9 +3,9 @@ import dotenv from "dotenv"
 
 dotenv.config()
 const protect = (req,res,next) => {
-    const token = req.headers.Authorization
+    const token = req.headers.authorization;
 
-    if(!token) return res.status(500).json({message:"please login to perform tbhe operation"})
+    if(!token) return res.status(500).json({message:"please login to perform the operation",token})
 
         try {
             
