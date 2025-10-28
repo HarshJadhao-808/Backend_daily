@@ -8,7 +8,6 @@ const protect = (req,res,next) => {
     if(!token) return res.status(500).json({message:"please login to perform the operation",token})
 
         try {
-            
             const decoded = jwt.verify(token, process.env.secret_key);
             req.user = decoded
             console.log(req.user)
