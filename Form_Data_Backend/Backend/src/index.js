@@ -2,19 +2,16 @@ import express from 'express'
 import dotenv from 'dotenv'
 import connectDb from './config/db.js'
 import cors from 'cors'
+import UserRouter from './routes/Userroutes.js'
 dotenv.config()
 const app = express()
 app.use(cors())
 app.use(express.json())
 connectDb(process.env.Mongo_Url);
 
-app.get("/",(req,res)=>{
-    res.json({
-        a:1,
-        b:2,
-        c:3
-    })
-})
+app.use("/user",UserRouter)
+
+
 
 
 
