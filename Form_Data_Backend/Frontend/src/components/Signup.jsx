@@ -9,17 +9,7 @@ const Signup = () => {
   })
     const Loginfun = async() => {
       event.preventDefault()
-       try {
-					const response = await axios.post(
-						"http://localhost:8000/signup",
-						Userdata
-					);
-					console.log("Signup successful:", response.data);
-					alert("User registered successfully!");
-				} catch (error) {
-					console.error("Error during signup:", error);
-					alert("Signup failed. Please try again.");
-				}
+      
       }
       
       const handlechange = (e) => {
