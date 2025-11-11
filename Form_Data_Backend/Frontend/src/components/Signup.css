@@ -1,0 +1,60 @@
+/* Simple and beginner-friendly CSS */
+
+/* Center the form on the page */
+body {
+  font-family: Arial, sans-serif;
+  background-color: #f3f3f3;
+}
+
+/* This outer div centers the form */
+div {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+}
+
+/* The form box */
+form {
+  background-color: white;
+  padding: 20px;
+  border-radius: 8px;
+  width: 300px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+/* Make inputs fill the form width */
+input[type="text"],
+input[type="email"],
+input[type="password"] {
+  width: 100%;
+  padding: 10px;
+  margin: 8px 0;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  font-size: 14px;
+}
+
+/* Highlight the box when you click inside */
+input:focus {
+  border-color: #007bff;
+  outline: none;
+}
+
+/* The submit button */
+input[type="submit"] {
+  width: 100%;
+  padding: 10px;
+  margin-top: 10px;
+  background-color: #007bff;
+  border: none;
+  color: white;
+  font-size: 16px;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+/* Change color slightly when hovering */
+input[type="submit"]:hover {
+  background-color: #0056b3;
+}
