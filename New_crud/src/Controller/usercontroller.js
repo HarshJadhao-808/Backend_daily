@@ -3,7 +3,7 @@ import express from 'express'
 
 export const  Postun =  async (req, res) => {
 	try {
-		const user = new User(req.body);
+		const user = await User.create(req.body);
 		await user.save();
 		res.json(user);
 	} catch (error) {

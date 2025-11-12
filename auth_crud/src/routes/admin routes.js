@@ -1,10 +1,10 @@
-import  express from 'express'
-import protect from '../middleware/authmiddleware.js'
-import { rolecheck } from '../middleware/rolecheck.js'
-import { getall } from '../controller/admincontroller.js'
+import express from "express";
+import protect from "../controller/middleware/authmiddleware.js";
+import { rolecheck } from "../controller/middleware/rolecheck.js";
+import { getall } from "../controller/admincontroller.js";
 
-const adminrouter = express.Router()
+const adminrouter = express.Router();
 
-adminrouter.get("/getall",protect,rolecheck("admin"),getall)
+adminrouter.get("/getall", protect, rolecheck("admin"), getall);
 
-export default adminrouter
+export default adminrouter;
