@@ -20,74 +20,34 @@ nav{
 
 
 .auth_page{
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    width: 1520px;
-    height: 695.4px;
-    opacity: 1;
-    background: linear-gradient(247.34deg, #A1B4FF 1.1%, #FFFFFF 99.7%);
-
+   
 }
 
 .signupinputs{
-  border: none;
-  background: #F7F7F7;
-  outline: none;
-  width: 70%;
-  height: 60px;
-  font-size: 16px;
+
 }
 
 .signupform{
-    width: 492px;
-    height: 532px;
-    background: #FFFFFF;
-    padding: 10px 30px;
-    border-radius: 30px;
-   
+  
 } 
 
 .colored_box_input{
-    background: #0142E1;
-    display: flex;
-    justify-content: end;
-    border-radius: 50px;
-    height: 71px;
-
-    
+   
     
 }
 
 .inputholder_div{
-    width: 97.6%;
-    background: #F7F7F7;
-    border-radius: 50px;
-    display: flex;
-    align-items: center;
-    justify-content: space-evenly;
-    
-  
+   
 }
 .input_image_div>img{
    width: 33px;
 }
 
 .signupinputs_submit{
-    border: none;
-    background: #0242E1;
-    width: 500px;
-    height: 70px;
-    border-radius: 50px;
-    font-size: 37.83px;
-    color: #FFFFFF;
+    
 }
 .loginform{
-    width: 492px;
-    height: 502px;
-    background: #FFFFFF;
-    padding: 10px 30px;
-    border-radius: 30px;
+  
 }
 
 

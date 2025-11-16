@@ -28,8 +28,16 @@ const Login = () => {
     setUser({...user,[e.target.name]:e.target.value})
   }
   return (
-		<div className='auth_page'>
-			<form className="loginform" onSubmit={logFun}>
+		<div
+			class="flex items-center justify-center 
+         w-full h-screen
+         sm:w-[1520px] sm:h-[695.4px]
+         opacity-100 
+         bg-[linear-gradient(247.34deg,#A1B4FF_1.1%,#FFFFFF_99.7%)]"
+		>
+			<form  class="w-[492px] h-[502px] bg-white 
+         px-[30px] py-[10px] 
+         rounded-[30px]" onSubmit={logFun}>
 				<h1 style={{ textAlign: "center", fontSize: " 37.83px" }}>Login</h1>
 				<div className="colored_box_input">
 					<div className="inputholder_div">
@@ -37,7 +45,7 @@ const Login = () => {
 							<img src="../../src/assets/email.svg" alt="" />
 						</div>
 						<input
-							className="signupinputs"
+							class="border-none bg-[#F7F7F7] outline-none "
 							type="email"
 							onChange={handlechange}
 							name="email"
@@ -52,7 +60,7 @@ const Login = () => {
 							<img src="../../src/assets/password.svg" alt="" />
 						</div>
 						<input
-							className="signupinputs"
+							class="         w-[70%] h-[60px] text-[16px]"
 							type="password"
 							onChange={handlechange}
 							name="password"
@@ -60,8 +68,30 @@ const Login = () => {
 						/>
 					</div>
 				</div>
-        <div style={{display:"flex",marginTop:"20px",marginLeft:"15px", justifyContent:"space-between"}}><div><input type="radio" /><p style={{fontSize:"16px",fontFamily:"sans-serif",display:"inline-block"}}>Remember me</p></div> <p style={{color:"#939393"}}>Forget Password</p></div>
-        <br /><br /> <br />
+				<div
+					style={{
+						display: "flex",
+						marginTop: "20px",
+						marginLeft: "15px",
+						justifyContent: "space-between",
+					}}
+				>
+					<div>
+						<input type="radio" />
+						<p
+							style={{
+								fontSize: "16px",
+								fontFamily: "sans-serif",
+								display: "inline-block",
+							}}
+						>
+							Remember me
+						</p>
+					</div>{" "}
+					<p style={{ color: "#939393" }}>Forget Password</p>
+				</div>
+				<br />
+				<br /> <br />
 				<input className="signupinputs_submit" value="Login" type="submit" />
 			</form>
 		</div>
