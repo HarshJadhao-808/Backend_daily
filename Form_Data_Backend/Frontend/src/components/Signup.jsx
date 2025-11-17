@@ -36,17 +36,17 @@ const Signup = () => {
    
   return (
 		<div class="flex  sm:items-center justify-center  w-full h-[596px] sm:w-full sm:h-[629px] opacity-100  bg-[linear-gradient(247.34deg,#A1B4FF_1.1%,#FFFFFF_99.7%)]">
-			<div class="bg-[#FFFFFF] rounded-[30px] mt-20 sm:mt-0  mb-50 sm:mb-0 w-[80%] h-[65%] sm:h-[80%] sm:w-[496px] flex flex-col gap-1 sm:gap-3">
+			<div class="bg-[#FFFFFF] rounded-[30px] mt-20 sm:mt-0  mb-50 sm:mb-0 w-[80%] h-[65%] sm:h-[85%] sm:w-[517px] flex flex-col gap-1 sm:gap-3">
 				<h1 class="text-center mt-5 sm:mt-7 text-[24px] sm:text-[37.83px] font-[500] sm:font-[700] font-[Halant] mb-2 sm:mb-2 ">
 					sign Up
 				</h1>
 				<div class="bg-[#0142E1] sm:mb-0 flex justify-end  rounded-[50px]  h-[50px] sm:h-[71px] w-[80%] sm:w-[80%] m-auto ">
 					<div class="w-[98%]  flex justify-center align-center bg-[#F7F7F7] rounded-[50px]">
 						<div class=" flex align-center  ml-3">
-							<img src="../../src/assets/user.svg" class="w-5 sm:w-8" alt="" />
+							<img src="../../src/assets/user.svg" class="w-5 sm:ml-3 sm:w-6" alt="" />
 						</div>
 						<input
-							class="border- ml-4 sm:h-full text-[12px] sm:text-[22px] sm:pl-8 bg-[#F7F7F7] outline-none w-[85%]  rounded-[50px] font-[halant]"
+							class="border- ml-4 sm:h-full text-[12px] sm:text-[15px] sm:pl-8 bg-[#F7F7F7] outline-none w-[85%]  rounded-[50px] font-[halant]"
 							type="text"
 							onChange={handlechange}
 							name="name"
@@ -57,10 +57,10 @@ const Signup = () => {
 				<div class="bg-[#0142E1] sm:mb-0 flex justify-end  rounded-[50px]  h-[50px] sm:h-[71px] w-[80%] sm:w-[80%] m-auto ">
 					<div class="w-[98%] flex justify-center align-center bg-[#F7F7F7] rounded-[50px]">
 						<div class=" flex align-center  ml-3">
-							<img src="../../src/assets/email.svg" class="w-5 sm:w-8" alt="" />
+							<img src="../../src/assets/email.svg" class="w-5 sm:ml-3 sm:w-6" alt="" />
 						</div>
 						<input
-							class="border- ml-4 sm:h-full text-[12px] sm:text-[22px] sm:pl-8 bg-[#F7F7F7] outline-none w-[85%]  rounded-[50px] font-[halant]"
+							class="border- ml-4 sm:h-full text-[12px] sm:text-[15px] sm:pl-8 bg-[#F7F7F7] outline-none w-[85%]  rounded-[50px] font-[halant]"
 							type="text"
 							onChange={handlechange}
 							name="name"
@@ -73,12 +73,12 @@ const Signup = () => {
 						<div class=" flex align-center  ml-3">
 							<img
 								src="../../src/assets/password.svg"
-								class="w-5 sm:w-8"
+								class="w-5 sm:ml-3 sm:w-6"
 								alt=""
 							/>
 						</div>
 						<input
-							class="border- ml-4 sm:h-full text-[12px] sm:text-[22px] sm:pl-8 bg-[#F7F7F7] outline-none w-[85%]  rounded-[50px] font-[halant]"
+							class="border- ml-4 sm:h-full text-[12px] sm:text-[15px] sm:pl-8 bg-[#F7F7F7] outline-none w-[85%]  rounded-[50px] font-[halant]"
 							type="text"
 							onChange={handlechange}
 							name="name"
