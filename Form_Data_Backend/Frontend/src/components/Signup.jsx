@@ -37,7 +37,7 @@ const Signup = () => {
 	return (
 		<form
 			onSubmit={signFun}
-			className="flex  sm:items-center justify-center  w-full h-[596px] sm:w-full sm:h-[629px] opacity-100  bg-[linear-gradient(247.34deg,#A1B4FF_1.1%,#FFFFFF_99.7%)]"
+			className="flex  sm:items-center justify-center  w-full h-[596px] sm:w-full sm:h-[540px] opacity-100  bg-[linear-gradient(247.34deg,#A1B4FF_1.1%,#FFFFFF_99.7%)]"
 		>
 			<div className="bg-[#FFFFFF] rounded-[30px] mt-20 sm:mt-0  mb-50 sm:mb-0 w-[80%] h-[65%] sm:h-[85%] sm:w-[517px] flex flex-col gap-1 sm:gap-3">
 				<h1 className="text-center mt-5 sm:mt-7 text-[24px] sm:text-[37.83px] font-[500] sm:font-[700] font-[Halant] mb-2 sm:mb-2 ">
